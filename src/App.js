@@ -21,7 +21,7 @@ function App() {
   };
 
   useEffect(() => {
-    const endpoint = `http://3.223.98.72:1337/api/students${buildQueryString(
+    const endpoint = `https://3.223.98.72:1337/api/students${buildQueryString(
       appliedFilters
     )}`;
 
