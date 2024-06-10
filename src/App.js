@@ -21,9 +21,7 @@ function App() {
   };
 
   useEffect(() => {
-    const endpoint = `https://3.223.98.72:1337/api/students${buildQueryString(
-      appliedFilters
-    )}`;
+    const endpoint =`/api/students${buildQueryString(appliedFilters)}`;
 
     axios
       .get(endpoint)
@@ -34,12 +32,6 @@ function App() {
           lastName: item.attributes.lastName || "-",
           email: item.attributes.parentEmailId || "-",
           phone: item.attributes.parentContactNo || "-",
-          // dob: item.attributes.dob,
-          // yearGroup: calculateYearGroup(item.attributes.dob),
-
-          // yearGroup: calculateYearGroup(item.attributes.dob),
-          // yearGroup: item.attributes.yearGroup,
-          // photo: item.attributes.photo
         }));
         setData(students);
         students.forEach((student) => console.log("This is DOB:", student.dob));
