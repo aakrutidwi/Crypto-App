@@ -1,0 +1,19 @@
+.crypto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; 
+    margin-bottom: 20px;
+   
+  }
+  
+  .crypto h1{
+    color: white;
+  }
+  .crypto h4{
+    color: grey;
+  }
+
+  .cr-img{
+    border-radius: 20px;
+  }
